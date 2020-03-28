@@ -5,7 +5,7 @@ var year=parseInt(today.getFullYear());
 var age=(year/4)%10;
 age=age +(year-birthyear)*365;
  var h1= document.createElement('h1');
- var textAnswer= document.createTextNode('you are'+ age+"old"); 
+ var textAnswer= document.createTextNode('you are '+ age+" old."); 
  h1.setAttribute('id','ageindays');
  h1.appendChild(textAnswer);
  document.getElementById('flex-box-result').appendChild(h1);
