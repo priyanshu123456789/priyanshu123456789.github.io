@@ -35,7 +35,7 @@
 						<li><a href="https://www.facebook.com/priyanshu.haldar.39/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<li><a href="https://www.instagram.com/haldar.priyanshu/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="https://github.com/priyanshu123456789" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<!--<li><a href="priyanshu1843@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>-->
+						<li><a href="mailto:priyanshu1843@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 				</footer>
 			</section>
@@ -114,7 +114,7 @@
 								<div class="container">
 									<h3>Contact Me</h3>
 									<p>Thank you for visiting my portfolio website. So if you want to contact me for any work, internship or a job then please fill the contact mr form below and send me a mail, i'll reach out to you as soon as possible.</p>
-									<form method="post" action="#">
+									<form method="post" action="contact-form-handler.php" name="contact-form">
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
 											<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
@@ -122,12 +122,78 @@
 											<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
 											<div class="col-12">
 												<ul class="actions">
-													<li><input type="submit" class="primary" value="Send Message" /><a href="mailto:priyanshu1843@gmail.com">H</a></li>
+													<li><input type="submit" class="primary" value="Send Message" /></li>
 													<li><input type="reset" value="Reset Form" /></li>
 												</ul>
 											</div>
 										</div>
 									</form>
+									 <script language=”JavaScript”>
+
+										var frmvalidator = new Validator(“contactform”);
+										 frmvalidator.addValidation(“name”,”req”,”Please provide your name”); 
+										 frmvalidator.addValidation(“email”,”req”,”Please provide your email”); 
+										 frmvalidator.addValidation(“email”,”email”, “Please enter a valid email address”); 
+									  </script>
+									    <?php
+
+									$errors = ”;
+
+									$myemail = ‘priyanshu1843@gmail.com’;//<—–Put Your email address here. if(empty($_POST[‘name’]) ||
+
+									empty($_POST[’email’]) ||
+
+									empty($_POST[‘message’]))
+
+									{
+
+									$errors .= “\n Error: all fields are required”;
+
+									}
+
+									$name = $_POST[‘name’];
+
+									$email_address = $_POST[’email’];
+
+									$message = $_POST[‘message’];
+
+									if (!preg_match(
+
+									“/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i”, $email_address))
+
+									{
+
+									$errors .= “\n Error: Invalid email address”;
+
+									}
+
+									if( empty($errors))
+
+									{
+
+									$to = $myemail;
+
+									$email_subject = “Contact form submission: $name”;
+
+									$email_body = “You have received a new message. “.
+
+									” Here are the details:\n Name: $name \n “.
+
+									“Email: $email_address\n Message \n $message”;
+
+									$headers = “From: $myemail\n”;
+
+									$headers .= “Reply-To: $email_address”;
+
+									mail($to,$email_subject,$email_body,$headers);
+
+									//redirect to the ‘thank you’ page
+
+									header(‘Location: contact-form-thank-you.html’);
+
+									}
+
+									?>
 								</div>
 							</section>
 
