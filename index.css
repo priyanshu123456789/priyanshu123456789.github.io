@@ -250,7 +250,7 @@ a{
     stroke: rgb(0, 152, 155);
 }
 #skills .skill_cards .box .percent .p_db circle:nth-child(2){
-    stroke-dashoffset: 45;
+    stroke-dashoffset: 55;
     stroke: rgb(26, 32, 119);
 }
 #skills .skill_cards .box .percent .p_blank circle:nth-child(2){
