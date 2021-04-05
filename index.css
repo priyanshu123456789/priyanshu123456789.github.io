@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+#header, #about, #skills, #works, #contact{
+    padding: 0 150px ;
+    margin: 0 0 30px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#header_bg_img{
+    width: 98.9vw;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    
+}
+#header_bg_img img{
+    width: inherit;
+    height: inherit;
+}
+#header_bg_img div{
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right,rgb(1, 17, 107), rgba(22, 150, 255, 0.582));
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; 
+}
+#header .pic_div .pic img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin: 30px 0 10px 23%;
+    box-shadow: 0 0 10px 6px rgba(255, 255, 255, 0.6);
+ }
+ #header .pic_div .name h1, b{
+     color: rgb(223, 229, 255);
+     padding: -1px 0; 
+     font-family: 'Pacifico', cursive;
+     font-weight: lighter;
+     text-align: center;
+     width: 310px;
+ }
+
+ .pic_div{
+     width: 310px;
+ }
+ .menu{
+     padding: 20px 0 0 300px;
+     width: 926px;
+ }
+ .menu h2 span{
+     color: gold;
+ }
+ .menu h2{
+     font-size: 30px;
+     color: ivory;
+     margin:100px 70px;
+     text-align:center ;
+     
+ }
+ .menu ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: inherit;
+    color: rgba(255, 255, 255, 0.925);
+    font-size: 30px;
+    justify-content: space-around;
+}
+.menu ul li a{
+    text-shadow: 0px 0px 2px rgba(255, 215, 103, 0.788);
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.925);
+}
+.menu ul li a:hover{
+    color: rgb(255, 217, 0);
+    transform: translateY(-3px);
+    transition: 0.25s ease-in-out;
+    letter-spacing: 1px;
+}
+
+.text{
+    flex-direction: column;
+}
+.text h1, #skills h1, #works h1, #contact h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    color: rgb(85, 85, 85);
+    font-weight: lighter;
+    border-left: 5px solid rgb(85, 85, 85);
+    border-radius: 5px;
+}
+.text p{
+    font-size: 20px;
+    color: grey;
+    margin: 0 0 0 40px;
+    padding: 2.5px 0;
+}
+.aboutpic img{
+    width: 300px;
+    height: auto;
+    margin: 0 0 0 50px ;
+    border: 2px solid rgb(179, 179, 179);
+    border-radius:40px ;
+}
+#skills{
+    padding-top: 20px;
+    box-shadow: 0 0 10px 10px rgb(255, 255, 255) inset ;
+    display: flex;
+    flex-direction: column;
+}
+#skills .skill_cards{
+    margin-left: 20px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#skills .skill_cards .box{
+    position:relative;
+    width: 150px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(255, 125, 32,0.2);
+    border-radius: 10px;
+}
+#skills .skill_cards .box .percent{
+    position:relative;
+    width: 80px;
+    height: 80px;
+}
+.h{
+    color:rgb(255, 125, 32) ;
+}
+.cs{
+    color:rgb(32, 121, 255) ;
+}
+.j{
+    color:rgb(255, 240, 32) ;
+}
+.p{
+    color: rgb(9, 194, 9);
+}
+.c{
+    color: rgb(35, 7, 158);
+}
+.java{
+    color: rgb(158, 7, 7);
+
+}
+.bootstrap{
+    color: rgb(103, 7, 158);
+}
+.arduino{
+    color: rgb(0,152,155);
+}
+.db{
+    color: rgb(26, 32, 119);
+}
+.blank{
+    color: rgb(156, 156, 156);
+}
+#skills .skill_cards .box .cover{
+    width: 80px;
+    height: 80px;
+    background:white;
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 80px;
+}
+#skills .skill_cards .box .cover:hover{
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+#skills .skill_cards .box .blank:hover{
+    opacity: 1;
+    /* transition: none; */
+}
+#skills .skill_cards .box .percent svg{
+    position:relative;
+    width: 80px;
+    height: 80px;
+    padding: 10px 0 0 5px;
+}
+#skills .skill_cards .box .percent svg circle{
+    width: 80px;
+    height: 80px;
+    fill: none;
+    stroke-width: 7;
+    stroke:#000;
+    transform: translate(5px, 5px);
+    stroke-dasharray: 188.5;
+    stroke-dashoffset: 188.5;
+    stroke-linecap: round;
+}
+#skills .skill_cards .box .percent svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: #f3f3f3;
+}
+#skills .skill_cards .box .percent .p_html circle:nth-child(2){
+    stroke-dashoffset: 25;
+    stroke: rgb(255, 125, 32);
+}
+#skills .skill_cards .box .percent .p_css circle:nth-child(2){
+    stroke-dashoffset: 65;
+    stroke: rgb(32, 121, 255);
+}
+#skills .skill_cards .box .percent .p_js circle:nth-child(2){
+    stroke-dashoffset: 130;
+    stroke: rgb(255, 240, 32);
+}
+#skills .skill_cards .box .percent .p_py circle:nth-child(2){
+    stroke-dashoffset: 120;
+    stroke: rgb(9, 194, 9);
+}
+#skills .skill_cards .box .percent .p_c circle:nth-child(2){
+    stroke-dashoffset: 150;
+    stroke: rgb(35, 7, 158);
+}
+#skills .skill_cards .box .percent .p_java circle:nth-child(2){
+    stroke-dashoffset: 120;
+    stroke: rgb(158, 7, 7);
+}
+#skills .skill_cards .box .percent .p_bootstrap circle:nth-child(2){
+    stroke-dashoffset: 85;
+    stroke: rgb(103, 7, 158);
+}
+#skills .skill_cards .box .percent .p_arduino circle:nth-child(2){
+    stroke-dashoffset: 65;
+    stroke: rgb(0, 152, 155);
+}
+#skills .skill_cards .box .percent .p_db circle:nth-child(2){
+    stroke-dashoffset: 45;
+    stroke: rgb(26, 32, 119);
+}
+#skills .skill_cards .box .percent .p_blank circle:nth-child(2){
+    stroke-dashoffset: 188.5;
+    stroke: rgb(156, 156, 156);
+}
+#skills .skill_cards .box .percent .number{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#skills .skill_cards .box .percent .number h2{
+font-size: 20px;
+}
+#skills .skill_cards .box .percent .number h2 span{
+    font-size: 10px;
+}
+#skills .skill_cards .box .text{
+    padding: 20px 0 0 0;
+    font-weight: 700 ;
+    letter-spacing: 1px;
+}
+
+
+#works{
+    padding-top: 20px;
+    box-shadow: 0 0 10px 10px rgb(255, 255, 255) inset ;
+    display: flex;
+    flex-direction: column;
+}
+
+#works .my_work{
+    margin-left: 20px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#works .my_work .wbox{
+    position:relative;
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(255, 125, 32,0.2);
+    border-radius: 10px;
+
+}
+
+.wcard{
+    width: inherit;
+    height: inherit;
+    padding: 2rem 1rem;
+    background: #fff;
+    position: relative;
+    display:flex;
+    align-items: flex-end;
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+/* .wcard:hover{
+    transform: translateY(20px);
+
+} */
+.wcard:before{
+    content: "";
+    position:absolute;
+    top:0;
+    left:0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to bottom, rgba(95, 130, 170, 0.5), rgb(157, 183, 253));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+    border-radius: 10px;
+
+}
+.wcard:hover:before{
+    opacity: 1;
+}
+
+.wcard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.wcard .info{
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+    border-radius: 10px;
+
+}
+
+.wcard:hover .info{
+    opacity: 1;
+    transform: translateY(0px);
+    border-radius: 10px;
+
+}
+
+
+#contact{
+    padding-top: 20px;
+    box-shadow: 0 0 10px 10px rgb(255, 255, 255) inset ;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .conicon{
+    margin-left: 20px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background: lawngreen; */
+}
+
+#contact .conicon div{
+    border-radius: 5px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150px;
+    height: 50px;
+}
+#contact .conicon div:hover{
+    transition: 0.7s ease-in-out;
+
+}
+
+#contact .conicon #mail{
+    border: 2px solid rgb(255, 77, 71);
+    color:rgb(255, 77, 71) ;
+    box-shadow: 0px 5px 10px rgba(255, 77, 71,0.2) ;
+}
+#contact .conicon #fb{
+    border: 2px solid rgb(74, 71, 255);
+    color:rgb(74, 71, 255);
+    box-shadow: 0px 5px 10px rgba(74, 71, 255,0.2);
+}
+#contact .conicon #github{
+    border: 2px solid rgb(37, 37, 37);
+    color:rgb(37, 37, 37);
+    box-shadow: 0px 5px 10px rgba(37, 37, 37,0.2);
+}
+#contact .conicon #insta{
+    border: 2px solid rgb(253, 32, 25);
+    color:rgb(253, 32, 25) ;
+    box-shadow: 0px 5px 10px rgba(253, 32, 25,0.2) ;
+}
+#contact .conicon #twitter{
+    border: 2px solid #17a2b8;
+    color:#17a2b8;
+    box-shadow: 0px 5px 10px rgba(23,162,184,0.2);
+}
+#contact .conicon #linkedin{
+    border: 2px solid rgb(43, 91, 250);
+    color:rgb(43, 91, 250) ;
+    box-shadow: 0px 5px 10px rgba(43, 91, 250,0.2) ;
+}
+
+#contact .conicon #mail:hover{
+    color: whitesmoke;
+    background: rgb(255, 77, 71);
+}
+#contact .conicon #fb:hover{
+    background:rgb(74, 71, 255);
+    color:whitesmoke;
+}
+#contact .conicon #github:hover{
+    background:rgb(37, 37, 37);
+    color:whitesmoke;
+}
+#contact .conicon #insta:hover{
+    background: rgb(253, 32, 25);
+    color:whitesmoke;
+}
+#contact .conicon #twitter:hover{
+    background: #17a2b8;
+    color:whitesmoke;
+}
+#contact .conicon #linkedin:hover{
+    background: rgb(43, 91, 250);
+    color:whitesmoke;
+}
