@@ -1,1 +1,0 @@
-document.getElementById("color-element").innerHTML="hello world";
