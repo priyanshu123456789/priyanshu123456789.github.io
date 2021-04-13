@@ -292,11 +292,11 @@ font-size: 20px;
     margin-left: 20px;
     height: 500px;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; !important
 }
 .js-work, .arduino-work{
-    width: inherit;
-    height:inherit;
+    width: 119.200px;
+    height:250px;
     display: flex;
     flex-direction: row;
     overflow-x: auto;
