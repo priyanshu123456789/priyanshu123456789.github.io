@@ -8,29 +8,32 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imgs/icon.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    
 </head>
 <body>
     <div id="header">
-        <div class="pic_div">
+        <div class="pic-nav_div">
             <div class="pic">
-                <img src="imgs/mypic.jpeg" alt="profile picture">
+                <img src="imgs/mypic.jpeg" alt="profile picture" onclick="document.getElementById('header').scrollIntoView({behavior: 'smooth', block: 'start'})">
             </div>
-            <div class="name">
-                <h1 style="font-size: 25px;" >Hi, I'm</h1>
-                <h1><b style="font-size: 40px;" >Priyanshu Haldar</b></h1>
-            </div>
+            <ul>
+              <li onclick="document.getElementById('header').scrollIntoView({behavior: 'smooth', block: 'start'})">Home</a></li>
+              <li onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth', block: 'start'})">About</li>
+              <li onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth', block: 'start'})">Skills</a></li>
+              <li onclick="document.getElementById('works').scrollIntoView({behavior: 'smooth', block: 'start'})">Works</a></li>
+              <li onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth', block: 'start'})">Contact Me</a></li>
+          </ul>
         </div>
         <div class="menu">
-            <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-
-            <h2>
-                <span>Developer</span> by passion<br> <span>Explorer</span> by soul<br> <span>Dreamer</span> by heart
+            
+          <div class="name">
+            <h1 style="font-size: 25px;" >Hi, I'm</h1>
+            <h1><b style="font-size: 40px;" >Priyanshu Haldar</b></h1>
+          </div>
+            <h2 class="thought">
+              <span>Developer</span> by passion<br> <span>Explorer</span> by soul<br> <span>Dreamer</span> by heart
             </h2>
         </div>
         <div id="header_bg_img">
@@ -230,69 +233,68 @@
         <h1>MY WORKS</h1>
         <section class="my_work">
           <section class="js-work">
-              <div class="wbox" style="box-shadow: 0px 5px 10px rgba(0,0,0,0.2);">
-                <div class="wcard">
-                  <a href="projects/clock/clock.html" target="_blank">
-                    <img src="imgs/clockimg.png" width="300px" height="200px">
-                    <div class="info">
-                      <h1 style="color: rgba(255, 255, 255, 0.767); border: none;">Clock</h1>
-                      <p>This is a simple clock i have made using JAVASCRIPT. Click to visit.</p>
-                    </div>
-                  </a>
-                </div>
+            <div class="wbox" style="box-shadow: 0px 5px 10px rgba(0,0,0,0.2);">
+              <div class="wcard">
+                <a href="projects/clock/clock.html" target="_blank">
+                  <img src="imgs/clockimg.png" width="300px" height="200px">
+                  <div class="info">
+                    <h1 style="color: rgba(255, 255, 255, 0.767); border: none;">Clock</h1>
+                    <p>This is a simple clock i have made using JAVASCRIPT. Click to visit.</p>
+                  </div>
+                </a>
               </div>
+            </div>
 
-              <div class="wbox">
-                <div class="wcard" style="box-shadow: 0px 5px 10px rgba(245,222,179,0.2);">
-                  <a href="projects/password-generator/password-generator.html" target="_blank">
-                    <img src="imgs/pssgenimg.png" width="300px" height="200px">
-                    <div class="info">
-                      <h1 style="color: rgba(255, 255, 255, 0.767); border: none; font-size: 40px ;">Password Generator</h1>
-                      <p>This is a Password Generator i have made using JAVASCRIPT. Click to visit.</p>
-                    </div>
-                  </a>
-                </div>
+            <div class="wbox">
+              <div class="wcard" style="box-shadow: 0px 5px 10px rgba(245,222,179,0.2);">
+                <a href="projects/password-generator/password-generator.html" target="_blank">
+                  <img src="imgs/pssgenimg.png" width="300px" height="200px">
+                  <div class="info">
+                    <h1 style="color: rgba(255, 255, 255, 0.767); border: none; font-size: 40px ;">Password Generator</h1>
+                    <p>This is a Password Generator i have made using JAVASCRIPT. Click to visit.</p>
+                  </div>
+                </a>
               </div>
+            </div>
 
-              <div class="wbox">
-                <div class="wcard" style="box-shadow: 0px 5px 10px rgba(240, 134, 34, 0.2)">
-                  <a href="projects/stopwatch/stopwatch.html" target="_blank">
-                    <img src="imgs/stopwatch.png" width="300px" height="200px">
-                    <div class="info">
-                      <h1 style="color: rgba(255, 255, 255, 0.767); border: none; font-size: 50px;">Stopwatch</h1>
-                      <p>This is a simple stopwatch i have made using JAVASCRIPT. Click to visit.</p>
-                    </div>
-                  </a>
-                </div>
+            <div class="wbox">
+              <div class="wcard" style="box-shadow: 0px 5px 10px rgba(240, 134, 34, 0.2)">
+                <a href="projects/stopwatch/stopwatch.html" target="_blank">
+                  <img src="imgs/stopwatch.png" width="300px" height="200px">
+                  <div class="info">
+                    <h1 style="color: rgba(255, 255, 255, 0.767); border: none; font-size: 50px;">Stopwatch</h1>
+                    <p>This is a simple stopwatch i have made using JAVASCRIPT. Click to visit.</p>
+                  </div>
+                </a>
               </div>
-              
-              <div class="wbox">
-                <div class="wcard" style="box-shadow: 0px 5px 10px rgba(50, 156, 160, 0.2)">
-                  <a href="projects/the colour guessing game/index.html" target="_blank">
-                    <img src="imgs/colorgame.png" width="300px" height="200px">
-                    <div class="info">
-                      <h1 style="color: rgba(255, 255, 255, 0.767); border: none; font-size: 50px;">Stopwatch</h1>
-                      <p>This is a simple Color guessing game i have made using JAVASCRIPT. Click to visit.</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </section>
-            
-            <section class="arduino-work">
-              <div class="wbox">
-                <div class="wcard" style="box-shadow: 0px 5px 10px rgba(34, 38, 240, 0.2)">
-                  <a href="projects/arduino/code.pdf" download target="_blank">
-                    <img src="imgs/ardunio.png" width="300px" height="200px">
-                    <div class="info">
-                      <h1 style="color: rgba(255, 255, 255, 0.767); border: none; font-size: 30px;">Covid Machine</h1>
-                      <p>This is a simple Covid detection system i have made using arduino on tinkercad. Click to download the code.</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </section>
+            </div>
 
+            <div class="wbox">
+              <div class="wcard" style="box-shadow: 0px 5px 10px rgba(50, 156, 160, 0.2)">
+                <a href="projects/the colour guessing game/index.html" target="_blank">
+                  <img src="imgs/colorgame.png" width="300px" height="200px">
+                  <div class="info">
+                    <h1 style="color: rgba(255, 255, 255, 0.767); border: none; font-size: 37px;">Color Guessing Game</h1>
+                    <p>This is a simple Color guessing game i have made using JAVASCRIPT. Click to visit.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <section class="arduino-work">
+            <div class="wbox">
+              <div class="wcard" style="box-shadow: 0px 5px 10px rgba(34, 38, 240, 0.2)">
+                <a href="projects/arduino/code.pdf" download target="_blank">
+                  <img src="imgs/ardunio.png" width="300px" height="200px">
+                  <div class="info">
+                    <h1 style="color: rgba(255, 255, 255, 0.767); border: none; font-size: 30px;">Covid Machine</h1>
+                    <p>This is a simple Covid detection system i have made using arduino on tinkercad. Click to download the code.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
         </section>
     </div>
 
@@ -334,5 +336,31 @@
     <footer>
       © Priyanshu Haldar  
     </footer>
+
+    <script type="text/javascript">
+    var scrolleffect = document.querySelector(".pic-nav_div");
+      $(window).on('scroll', function(){
+        if($(window).scrollTop()){ 
+          scrolleffect.classList.add("scrleff");
+          scrolleffect.style.width='100vw';
+          scrolleffect.style.left='0px';
+          scrolleffect.style.padding='0px 150px';
+          document.querySelector("#about").style.padding="80px 150px 0 150px";
+          document.querySelector("#skills").style.padding="80px 150px 0 150px";
+          document.querySelector("#works").style.padding="80px 150px 0 150px";
+          // document.querySelector("#contact").style.padding="80px 150px 0 150px";
+      }else{
+        scrolleffect.classList.remove("scrleff");
+        scrolleffect.style.width='initial';
+        scrolleffect.style.left='initial';
+        scrolleffect.style.padding='initial';
+        document.querySelector("#about").style.padding="50px 150px 0 150px";
+        document.querySelector("#skills").style.padding="0 150px";
+        document.querySelector("#works").style.padding="0 150px";
+        // document.querySelector("#contact").style.padding="0 150px";
+      }
+    })
+    </script>
+
 </body>
 </html>
