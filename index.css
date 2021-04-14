@@ -1,5 +1,4 @@
 *{
-    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,12 +8,19 @@ a{
     text-decoration: none;
 }
 #header, #about, #skills, #works, #contact{
-    padding: 0 150px ;
-    margin: 0 0 30px 0;
+    padding: 30px 150px 0 150px;
+    margin: 0 0 40px 0;
     display: flex;
     flex-direction: row;
 }
-
+#header{
+    flex-direction: column;
+    height: 350px;
+    padding-top: 0;
+}
+#about{
+    padding-top: 50px;
+}
 #header_bg_img{
     width: 98.9vw;
     height: 350px;
@@ -37,14 +43,19 @@ a{
     left: 0;
     z-index: 1; 
 }
-#header .pic_div .pic img{
+
+#header .pic-nav_div .pic img{
     height: 180px;
     width: 180px;
     border-radius: 50%;
     margin: 30px 0 10px 23%;
     box-shadow: 0 0 10px 6px rgba(255, 255, 255, 0.6);
+    transition: 0.3s ;
  }
- #header .pic_div .name h1, b{
+ #header .pic-nav_div .pic{
+     width: 310px;
+ }
+ #header .menu .name h1, b{
      color: rgb(223, 229, 255);
      padding: -1px 0; 
      font-family: 'Pacifico', cursive;
@@ -53,12 +64,36 @@ a{
      width: 310px;
  }
 
- .pic_div{
-     width: 310px;
+ .pic-nav_div{
+     width: inherit;  
+     height: 150px;
+     display: flex;
+     flex-direction: row;
+     position: fixed;
  }
+.scrleff{
+    
+    background: url("imgs/scrollbg.png");
+    width: 100%;
+    height: 80px;
+    z-index: 50 ;
+}
+#header .scrleff .pic img{
+    height: 65px;
+    width: 65px;
+    position: relative;
+    top: -23px;
+    box-shadow: 0 0 6px 3px rgba(255, 255, 255, 0.6);
+}
  .menu{
-     padding: 20px 0 0 300px;
-     width: 926px;
+     display: flex;
+     flex-direction: row;
+     width: inherit;
+     height: 200px;
+     margin-top: 150px;
+ }
+ .menu .name{
+     padding: 74px 0 0 0;
  }
  .menu h2 span{
      color: gold;
@@ -66,26 +101,29 @@ a{
  .menu h2{
      font-size: 30px;
      color: ivory;
-     margin:100px 70px;
+     margin:3px 0 0 440px ;
      text-align:center ;
      
  }
- .menu ul{
+ .pic-nav_div ul{
     list-style-type: none;
     display: flex;
-    flex-direction: inherit;
+    width: 910px;
+    flex-direction: row;
     color: rgba(255, 255, 255, 0.925);
     font-size: 30px;
+    padding: 20px 0 0 300px;
     justify-content: space-around;
 }
-.menu ul li a{
+.pic-nav_div ul li {
+    height: 50px;
     text-shadow: 0px 0px 2px rgba(255, 215, 103, 0.788);
     cursor: pointer;
     color: rgba(255, 255, 255, 0.925);
 }
-.menu ul li a:hover{
+.pic-nav_div ul li:hover{
     color: rgb(255, 217, 0);
-    transform: translateY(-3px);
+    /* transform: translateY(-3px); */
     transition: 0.25s ease-in-out;
     letter-spacing: 1px;
 }
@@ -251,7 +289,7 @@ a{
     stroke: rgb(0, 152, 155);
 }
 #skills .skill_cards .box .percent .p_db circle:nth-child(2){
-    stroke-dashoffset: 55;
+    stroke-dashoffset: 45;
     stroke: rgb(26, 32, 119);
 }
 #skills .skill_cards .box .percent .p_blank circle:nth-child(2){
@@ -293,20 +331,21 @@ font-size: 20px;
     margin-left: 20px;
     height: 500px;
     display: flex;
-    flex-direction: column; !important
+    flex-direction: column;
 }
 .js-work, .arduino-work{
-    width: 1199.200px;
-    height:250px;
+    width: inherit;
+    height:inherit;
     display: flex;
     flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
 }
 .js-work::-webkit-scrollbar, .arduino-work::-webkit-scrollbar{
-    background: transparent;  
+    background: transparent;
+    
 }
-#works .my_work .wbox{
+#works .my_work  .wbox{
     position:relative;
     width: 300px;
     height: 200px;
@@ -332,6 +371,11 @@ font-size: 20px;
     transition: 0.5s ease-in-out;
     border-radius: 10px;
 }
+
+/* .wcard:hover{
+    transform: translateY(20px);
+
+} */
 .wcard:before{
     content: "";
     position:absolute;
@@ -476,4 +520,3 @@ footer{
     height: 40px;
     padding: 5px 0;
 }
-
