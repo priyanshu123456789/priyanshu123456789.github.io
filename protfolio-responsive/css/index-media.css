@@ -110,3 +110,31 @@ BREAKPOINT 3:- 500PX
     display: block;
     }
 }
+
+/*
+BREAKPOINT 3:- 390PX
+*/
+@media all and (max-width: 390px) {
+    #about .text h1, #skills h1, #works h1{
+        font-size: 47px;
+    }
+    #contact h1 , #works h1{
+        font-size: 37px;
+    }
+    #skills .skill_cards .box{
+        margin: 15px ;
+    }
+
+}
+
+/*
+BREAKPOINT 3:- 320PX
+*/
+@media all and (max-width: 320px) {
+ #skills .skill_cards, #contact .conicon {
+    justify-content: center;
+ }
+ .scrleff img{
+    left: -65px;
+ }
+}
