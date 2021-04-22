@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <!-- CSS links -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/index-media.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+        <link rel="icon" type="image/png" href="imgs/icon.png">
+
+        <!-- JS script links -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <!-- HEADER STARTS -->
+        <header id="header" style="background: url('imgs/scrollbg.jpg');">
+            
+            <!-- NAVBAR STARTS -->
+            <nav id="navigationbar">
+                <img src="imgs/mypic.jpeg" class="img-circle " alt="Priyanshu_Haldar">
+                <button onclick="myFunction()" id="dropbtn"><i id="rotate" class="fas fa-bars"></i></button>
+                <ul id="myDropdown" class="dropdown-content">
+                  <li onfocus="fade()" onclick="document.getElementById('header').scrollIntoView({behavior: 'smooth', block: 'start'})">Home</li>
+                  <li onfocus="fade()" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth', block: 'start'})">About</li>
+                  <li onfocus="fade()" onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth', block: 'start'})">Skills</li>
+                  <li onfocus="fade()" onclick="document.getElementById('works').scrollIntoView({behavior: 'smooth', block: 'start'})">Works</li>
+                  <li onfocus="fade()" onclick="document.getElementById('footer').scrollIntoView({behavior: 'smooth', block: 'start'})">Contact Me</li>
+                </ul>
+                <ul class=" my_ul_navbar" >
+                  <li onfocus="fade()" onclick="document.getElementById('header').scrollIntoView({behavior: 'smooth', block: 'start'})">Home</li>
+                  <li onfocus="fade()" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth', block: 'start'})">About</li>
+                  <li onfocus="fade()" onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth', block: 'start'})">Skills</li>
+                  <li onfocus="fade()" onclick="document.getElementById('works').scrollIntoView({behavior: 'smooth', block: 'start'})">Works</li>
+                  <li onfocus="fade()" onclick="document.getElementById('footer').scrollIntoView({behavior: 'smooth', block: 'start'})">Contact Me</li>
+                </ul>
+            </nav>
+            <!-- NAVBAR ENDS -->
+            <!-- QUOTEDIV STARTS -->
+            <div id="quote">
+                <div class="name">
+                    <h1 style="font-size: 25px;" >Hi, I'm</h1>
+                    <h1><b style="font-size: 40px;" >Priyanshu Haldar</b></h1>
+                </div>
+                    <h2 class="thought">
+                      <span>Developer</span> by passion<br> <span>Explorer</span> by soul<br> <span>Dreamer</span> by heart
+                    </h2>
+            </div>
+            <!-- QUOTEDIV ENDS -->
+        </header>
+        <!-- HEADER ENDS -->
+        <div class="wave-div" style="background: url('imgs/scrollbg.jpg'); ">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 130"><path fill="#fff" fill-opacity="1" d="M0,0L48,21.3C96,43,192,85,288,106.7C384,128,480,128,576,112C672,96,768,64,864,58.7C960,53,1056,75,1152,85.3C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </div>
+
+        <!-- ABOUT STARTS  -->
+        <div id="about">
+            <div class="text">
+                <h1>ABOUT ME</h1>
+                <img class="smallscreenimg" src="imgs/mypic.jpeg" alt="profile picture 2">
+                <p>
+                    A very curious and passionate Programmer. Always in quest to 
+                    learn something new and so i bumped into this programming world which has opened a path to the vast 
+                    ocean of creativity and knowledge for me.
+                </p>
+                <p>
+                    Also got a wonderlust which brings me the 
+                    photography and stuff. Don't really like to read but sometimes do prefer to read some 
+                    detective stories, fantasy, and sci-fi as these help take my imagination to a whole new level and get some crazy ideas.
+                    Also came to grow an attraction towards audiobooks. And like to play badminton.
+                </p>
+            </div>
+            <div class="aboutpic">
+                <img src="imgs/mypic.jpeg" alt="profile picture 2">
+            </div>
+        </div>
+        <!-- ABOUT ENDS -->
+
+
+        <!-- SKILLS STARTS -->
+        <div id="skills">
+            <h1>MY SKILLS</h1>
+            <scetion class="skill_cards">
+    
+                <div class="box" style="box-shadow: 0 5px 10px rgba(255, 125, 32,0.2);">
+                    <div class="percent">
+                        <section class="cover h">
+                            <i class="fab fa-html5"></i>
+                        </section>
+                      <svg class="p_html">
+                        <circle cx="30" cy="30" r="30"></circle>
+                        <circle cx="30" cy="30" r="30"></circle>
+                      </svg>
+                      <div class="number h">
+                        <h2>90<span>%</span></h2>
+                      </div>
+                    </div>
+                    <h2 class="text h">HTML</h2>
+                </div>
+    
+                <div class="box" style="box-shadow: 0 5px 10px rgba(32, 121, 255,0.2);">
+                    <div class="percent">
+                        <section class="cover cs">
+                            <i class="fab fa-css3"></i>
+                        </section>
+                      <svg class="p_css">
+                        <circle cx="30" cy="30" r="30"></circle>
+                        <circle cx="30" cy="30" r="30"></circle>
+                      </svg>
+                      <div class="number cs">
+                        <h2>65<span>%</span></h2>
+                      </div>
+                    </div>
+                    <h2 class="text cs">CSS</h2>
+                </div>
+    
+                <div class="box" style="box-shadow: 0 5px 10px rgb(255, 240, 32,0.2);">
+                    <div class="percent">
+                        <section class="cover j">
+                            <i class="fab fa-js"></i>
+                        </section>
+                      <svg class="p_js">
+                        <circle cx="30" cy="30" r="30"></circle>
+                        <circle cx="30" cy="30" r="30"></circle>
+                      </svg>
+                      <div class="number j">
+                        <h2>30<span>%</span></h2>
+                      </div>
+                    </div>
+                    <h2 class="text j">JAVASCRIPT</h2>
+                </div>
+    
+                <div class="box" style="box-shadow: 0 5px 10px rgba(32, 255, 32, 0.2);">
+                    <div class="percent">
+                        <section class="cover p">
+                            <i class="fab fa-python"></i>
+                        </section>
+                      <svg class="p_py">
+                        <circle cx="30" cy="30" r="30"></circle>
+                        <circle cx="30" cy="30" r="30"></circle>
+                      </svg>
+                      <div class="number p">
+                        <h2>35<span>%</span></h2>
+                      </div>
+                    </div>
+                    <h2 class="text p">PYTHON</h2>
+                </div>
+    
+                <div class="box" style="box-shadow: 0 5px 10px rgba(35, 7, 158, 0.2);">
+                    <div class="percent">
+                        <section class="cover c">
+                            <p style="font-family:Georgia, 'Times New Roman', Times, serif;">C</p>
+                        </section>
+                      <svg class="p_c">
+                        <circle cx="30" cy="30" r="30"></circle>
+                        <circle cx="30" cy="30" r="30"></circle>
+                      </svg>
+                      <div class="number c">
+                        <h2>20<span>%</span></h2>
+                      </div>
+                    </div>
+                    <h2 class="text c">C</h2>
+                </div>
+    
+                <div class="box" style="box-shadow: 0 5px 10px rgba(158, 7, 7, 0.2);">
+                    <div class="percent">
+                        <section class="cover java">
+                            <i class="fab fa-java"></i>
+                        </section>
+                      <svg class="p_java">
+                        <circle cx="30" cy="30" r="30"></circle>
+                        <circle cx="30" cy="30" r="30"></circle>
+                      </svg>
+                      <div class="number java">
+                        <h2>35<span>%</span></h2>
+                      </div>
+                    </div>
+                    <h2 class="text java">JAVA</h2>
+                </div>
+    
+                <div class="box" style="box-shadow: 0 5px 10px rgba(103, 7, 158, 0.2);">
+                    <div class="percent">
+                        <section class="cover bootstrap">
+                            <i class="fab fa-bootstrap"></i>
+                        </section>
+                      <svg class="p_bootstrap">
+                        <circle cx="30" cy="30" r="30"></circle>
+                        <circle cx="30" cy="30" r="30"></circle>
+                      </svg>
+                      <div class="number bootstrap">
+                        <h2>56<span>%</span></h2>
+                      </div>
+                    </div>
+                    <h2 class="text bootstrap"  >BOOTSTRAP</h2>
+                </div>
+    
+                <div class="box" style="box-shadow: 0 5px 10px rgba(26, 32, 119, 0.2);">
+                  <div class="percent">
+                      <section class="cover db">
+                          <i class="fas fa-database"></i>
+                      </section>
+                    <svg class="p_db">
+                      <circle cx="30" cy="30" r="30"></circle>
+                      <circle cx="30" cy="30" r="30"></circle>
+                    </svg>
+                    <div class="number db">
+                      <h2>70<span>%</span></h2>
+                    </div>
+                  </div>
+                  <h2 class="text db">DATABASE</h2>
+                </div>
+    
+                <div class="box" style="box-shadow: 0 5px 10px rgba(0, 152, 155, 0.2);">
+                  <div class="percent">
+                      <section class="cover arduino">
+                          <img src="imgs/arduino-icon.jpg" style="height: 80px; width: 80px;">
+                      </section>
+                    <svg class="p_arduino">
+                      <circle cx="30" cy="30" r="30"></circle>
+                      <circle cx="30" cy="30" r="30"></circle>
+                    </svg>
+                    <div class="number arduino">
+                      <h2>65<span>%</span></h2>
+                    </div>
+                  </div>
+                  <h2 class="text arduino">ARDUINO</h2>
+                </div>
+    
+                <div class="box" style="box-shadow: 0 5px 10px rgba(156, 156, 156, 0.2);">
+                    <div class="percent">
+                        <section class="cover blank">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </section>
+                      <svg class="p_blank">
+                        <circle cx="30" cy="30" r="30"></circle>
+                        <circle cx="30" cy="30" r="30"></circle>
+                      </svg>
+                      <div class="number blank">
+                        <h2>0<span>%</span></h2>
+                      </div>
+                    </div>
+                    <h2 class="text blank"  style="font-size: 20px; text-align: center;">More <br>Coming</h2>
+                </div>
+    
+            </scetion>
+        </div>
+        <!-- SKILLS ENDS -->
+
+        <!-- WORKS STARTS -->
+        <div id="works">
+            <h1>MY WORKS</h1>
+            <section class="my_work">
+              <section class="js-work" id="dummy">
+                <div class="wbox" style="box-shadow: 0px 5px 10px rgba(0,0,0,0.2);">
+                  <div class="wcard">
+                    <a href="projects/clock/clock.html" target="_blank">
+                      <img src="imgs/clockimg.png" width="300px" height="200px">
+                      <div class="info">
+                        <h1 style="color: rgba(255, 255, 255, 0.767); border: none;">Clock</h1>
+                        <p>This is a simple clock i have made using JAVASCRIPT. Click to visit.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+    
+                <div class="wbox">
+                  <div class="wcard" style="box-shadow: 0px 5px 10px rgba(245,222,179,0.2);">
+                    <a href="projects/password-generator/password-generator.html" target="_blank">
+                      <img src="imgs/pssgenimg.png" width="300px" height="200px">
+                      <div class="info">
+                        <h1 style="color: rgba(255, 255, 255, 0.767); border: none; font-size: 40px ;">Password Generator</h1>
+                        <p>This is a Password Generator i have made using JAVASCRIPT. Click to visit.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+    
+                <div class="wbox">
+                  <div class="wcard" style="box-shadow: 0px 5px 10px rgba(240, 134, 34, 0.2)">
+                    <a href="projects/stopwatch/stopwatch.html" target="_blank">
+                      <img src="imgs/stopwatch.png" width="300px" height="200px">
+                      <div class="info">
+                        <h1 style="color: rgba(255, 255, 255, 0.767); border: none; font-size: 50px;">Stopwatch</h1>
+                        <p>This is a simple stopwatch i have made using JAVASCRIPT. Click to visit.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+    
+                <div class="wbox">
+                  <div class="wcard" style="box-shadow: 0px 5px 10px rgba(50, 156, 160, 0.2)">
+                    <a href="projects/the colour guessing game/index.html" target="_blank">
+                      <img src="imgs/colorgame.png" width="300px" height="200px">
+                      <div class="info">
+                        <h1 style="color: rgba(255, 255, 255, 0.767); border: none; font-size: 37px;">Color Guessing Game</h1>
+                        <p>This is a simple Color guessing game i have made using JAVASCRIPT. Click to visit.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+
+                <div id="arrow"><i class="fas fa-chevron-right"></i></div>
+              </section>
+    
+              <section class="arduino-work">
+                <div class="wbox">
+                  <div class="wcard" style="box-shadow: 0px 5px 10px rgba(34, 38, 240, 0.2)">
+                    <a href="projects/arduino/code.pdf" download target="_blank">
+                      <img src="imgs/ardunio.png" width="300px" height="200px">
+                      <div class="info">
+                        <h1 style="color: rgba(255, 255, 255, 0.767); border: none; font-size: 30px;">Covid Machine</h1>
+                        <p>This is a simple Covid detection system i have made using arduino on tinkercad. Click to download the code.</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </section>
+            </section>
+        </div>
+        <!-- WORKS ENDS -->
+
+        <!-- CONTACT  STARTS -->
+        <div id="contact">
+            <h1>CONTACT ME</h1>
+            <section class="conicon">
+              <a href="mailto:priyanshu1843@gmail.com" target="_blank">
+                <div id="mail">
+                  <i class="fa fa-envelope-square"></i>Mail Me
+                </div>
+              </a>
+              <a href="https://www.facebook.com/priyanshu.haldar.39/" target="_blank">
+                <div id="fb">
+                  <i class="fa fa-facebook-square"></i>Facebook
+                </div>
+              </a>
+              <a href="https://github.com/priyanshuhaldar007" target="_blank">
+                <div id="github">
+                  <i class="fa fa-github-square"></i>Github
+                </div>
+              </a>
+              <a href="https://www.instagram.com/haldar.priyanshu/" target="_blank">
+                <div id="insta">
+                  <i class="fab fa-instagram-square"></i>Instagram
+                </div>
+              </a>
+              <a href="https://twitter.com/PriyanshuHalda5" target="_blank">
+                <div id="twitter">
+                  <i class="fa fa-twitter-square"></i>Twitter
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/priyanshu-haldar-61b2731aa/" target="_blank">
+                <div id="linkedin">
+                  <i class="fa fa-linkedin-square"></i>Linkedin
+                </div>
+              </a>
+            </section>
+        </div>
+        <!-- CONTACT ENDS -->
+
+        <!-- FOOTER STARTS -->
+        <footer id="footer">
+            © Priyanshu Haldar  
+        </footer>
+        <!-- FOOTER ENDS -->
+        <!-- JS script links -->
+        <script src="index.js"></script>
+    </body>
+</html>

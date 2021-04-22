@@ -1,0 +1,112 @@
+/*
+BREAKPOINT 1:- 1300PX
+*/
+
+@media all and (max-width: 1300px) {
+    
+    nav, #quote, #about, #skills, #works, #contact{
+        padding:0 30px;
+    }
+    #skills .skill_cards{
+        height: fit-content;;
+    }
+}
+
+/*
+BREAKPOINT 2:- 950PX
+*/
+@media all and (max-width: 950px) {
+    
+    nav .my_ul_navbar{
+        display: none;
+    }
+    nav #dropbtn{
+        display: initial;
+        position: relative;
+        top: 10px;
+        right: 5px;
+    }
+    #quote .thought{
+        padding-right: 50px;
+    }
+    .aboutpic{
+        display: none;
+    }
+    #about .smallscreenimg{
+        display: inline-block;
+        float: right;
+    }
+    /* #contact .conicon div{
+        margin:5px ;
+    } */
+}
+/* Radndom breakpoint for thought */
+@media all and (max-width: 750px) {
+    #quote .thought{
+        display: none;
+    }
+    #skills .skill_cards{
+        margin-left:5px ;
+    }
+    #works .my_work{
+        margin-left:5px ;
+    }
+}
+/*
+BREAKPOINT 3:- 500PX
+*/
+@media all and (max-width: 500px) {
+    nav{
+        height: 80px ;
+    }
+    nav .img-circle{
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 60px ;
+        margin: 0 calc((100vw/2) - 100px) 0 calc((100vw/2) - 100px);
+        transition: 0.3s;
+    }
+       .scrolldropdown{
+        animation: movesmallscrn 1s  ;
+    } 
+    @keyframes movesmallscrn{
+        0%{
+            top:70px;
+            opacity: 0;
+        }
+        100%{
+            z-index: 10;
+            top: 10px;
+        }
+    }
+    .scrleff img{
+        height: 60px;
+        width: 60px;
+        position: relative;
+        top: 13%;
+        left: -85px;
+        box-shadow: 0 0 6px 3px rgba(255, 255, 255, 0.6);
+    }
+    #quote .name{
+        top: 150px;
+        margin: 0 calc((100vw/2) - 180px);
+    }
+    #about .smallscreenimg{
+        margin:0 100px 10px 100px;
+    }
+    #about .text p{
+        margin-left: 10px;
+        text-align: justify;
+    }
+    #skills .skill_cards .box{
+        width: 120px;
+        height: auto;
+    }
+    #skills .skill_cards .box .text{
+        font-size: 15px;
+    }
+    #works .my_work .js-work #arrow{
+    display: block;
+    }
+}
