@@ -471,7 +471,7 @@ nav img,ul{
     overflow-x: auto;
     overflow-y: hidden;
 }
-.js-work::-webkit-scrollbar, .arduino-work::-webkit-scrollbar{
+.js-work::-webkit-scrollbar, .arduino-work::-webkit-scrollbar, .js-work::-moz-scrollbar{
     background: transparent;
     
 }
